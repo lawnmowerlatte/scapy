@@ -11,6 +11,7 @@ import socket,time
 from .config import conf
 from .data import *
 from scapy.error import warning, log_runtime
+import scapy.sendrecv as sendrecv
 
 class _SuperSocket_metaclass(type):
     def __repr__(self):
